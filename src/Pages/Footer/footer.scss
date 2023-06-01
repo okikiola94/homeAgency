@@ -1,0 +1,38 @@
+.footerWrap {
+  margin-block-start: 5%;
+  padding-inline: 12% 15%;
+
+  hr {
+    background-color: #f4511e;
+    border: #f4511e 1px solid;
+  }
+  .footerContent {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-block-start: 5%;
+    padding-inline: 10%;
+
+    .socialMediaHandlesFlex {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding-block: 0.5rem;
+    }
+    p {
+      color: #0a142f;
+      font-size: 14px;
+    }
+    .socialMediaHandles {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      padding-block: 0.5rem;
+
+      svg {
+        color: #f4511e;
+        font-size: 1.5rem;
+      }
+    }
+  }
+}

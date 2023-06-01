@@ -1,0 +1,21 @@
+.HomeComponents {
+  display: flex;
+  align-items: center;
+  gap: 25%;
+  padding: 5% 10%;
+
+  .HomeParagraph {
+    width: 50%;
+    h2 {
+      font-family: "Inter";
+      font-weight: 700;
+      font-size: 52px;
+      line-height: 70px;
+
+      letter-spacing: -1px;
+      text-transform: capitalize;
+
+      color: #ffffff;
+    }
+  }
+}

@@ -1,0 +1,28 @@
+.FootNavWrap {
+  margin-block: 5%;
+  padding-inline: 18%;
+
+  hr {
+    border: solid 0.1px #d7e7f8;
+  }
+
+  .footNavContent {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .footNavUlorderedList {
+      display: flex;
+      list-style: none;
+      gap: 1rem;
+      color: #0a142f;
+      font-size: 14px;
+      text-transform: uppercase;
+    }
+    small {
+      color: #0a142f;
+      font-family: inter;
+      font-weight: lighter;
+    }
+  }
+}

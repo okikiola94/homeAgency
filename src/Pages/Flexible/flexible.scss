@@ -1,0 +1,79 @@
+.FlexibleContainer {
+  margin-block-start: 5%;
+  padding-inline: 15% 15%;
+
+  .FlexibleGrid {
+    display: flex;
+    align-items: center;
+    gap: 10%;
+
+    .FlexibleImgFlex {
+      display: grid;
+      grid-template-columns: repeat(2, 2fr);
+      //   gap: 5%;
+
+      .FlexibleImgFlexColumn {
+        .FlexibleLeases {
+          background-image: url("./images/flexible.png");
+          height: 334px;
+          width: 250px;
+        }
+        .FlexibleHappiness {
+          background-image: url("./images/happiness.png");
+          width: 270px;
+          height: 270px;
+        }
+
+        .FlexibleCleaning {
+          background-image: url("./images/cleaning.png");
+          width: 212px;
+          height: 285px;
+        }
+        .FlexibleRoommate {
+          background-image: url("./images/roomate.png");
+          width: 300px;
+          height: 356px;
+          border-radius: 20px;
+        }
+      }
+
+      #flex2 {
+        padding-top: 5rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+      }
+    }
+
+    .FlexibleTextFlex {
+      .FlexibleHeaderText {
+        font-family: "Inter";
+        font-weight: 800;
+        font-size: 40px;
+        font-feature-settings: "salt" on, "liga" off;
+        color: #18191f;
+      }
+      .FlexibleParagraphText {
+        font-family: "Inter";
+        font-size: 18px;
+        font-feature-settings: "salt" on, "liga" off;
+        color: #18191f;
+        text-align: justify;
+      }
+      .FlexibleSearchBtn {
+        width: 185px;
+        height: 63px;
+        background: #f4511e;
+        border: #f4511e solid 1px;
+        border-radius: 13px;
+        font-family: "Inter";
+        font-weight: 600;
+        font-size: 18px;
+        font-feature-settings: "salt" on, "liga" off;
+        color: #ffffff;
+        cursor: pointer;
+      }
+    }
+  }
+}

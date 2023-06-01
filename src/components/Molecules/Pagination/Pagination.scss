@@ -1,0 +1,161 @@
+.PropertiesPagination {
+  .PropertNavContainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .PropertNavContainerHeading {
+      font-family: "Inter";
+      font-weight: 800;
+      font-size: 36px;
+      text-transform: capitalize;
+      font-feature-settings: "salt" on, "liga" off;
+      color: #18191f;
+
+      .PropertNavContainerSpan {
+        border-bottom: 3px solid #f4511e;
+      }
+    }
+
+    .PropertNavContainerButton {
+      background: #f4511e;
+      box-shadow: 0px 20px 13px rgba(248, 90, 71, 0.035),
+        0px 8.14815px 6.51852px rgba(248, 90, 71, 0.0274815),
+        0px 1.85185px 3.14815px rgba(248, 90, 71, 0.0168519);
+      border-radius: 5px;
+      border: #f4511e 1px solid;
+      width: 200px;
+      height: 65px;
+      padding: 8px 16px;
+      font-family: "Manrope";
+      font-weight: 500;
+      font-size: 17px;
+      text-align: center;
+      color: #ffffff;
+      cursor: pointer;
+    }
+  }
+  .CardPaginationContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .card-pagination {
+      display: grid;
+      grid-template-columns: repeat(3, 2fr);
+      gap: 2rem;
+
+      .card {
+        width: 95%;
+        margin: 1%;
+        //   padding: 2%;
+        box-shadow: 1px 1px 3px #ccc;
+        background-color: #fff;
+        border: 1px solid #979797;
+        border-radius: 26px;
+        img {
+          width: 100%;
+          height: auto;
+        }
+        .cardPagination {
+          padding: 2% 5%;
+          .cardPaginationTitle {
+            font-family: "DM Sans";
+            font-weight: 700;
+            font-size: 1.5rem;
+            text-transform: capitalize;
+            color: #000000;
+          }
+          .cardPaginationDescription {
+            font-family: "DM Sans";
+            font-size: 18px;
+            text-transform: capitalize;
+            color: #818181;
+          }
+          .cardPaginationPrice {
+            font-family: "DM Sans";
+            font-weight: 700;
+            font-size: 1.2rem;
+            text-transform: capitalize;
+            color: #f4511e;
+          }
+        }
+        .cardPaginationDetails {
+          padding-inline: 5%;
+          display: flex;
+          gap: 15%;
+          align-items: center;
+
+          border-top: #e4e4e4 1px solid;
+
+          .cardPaginationLine {
+            background: #e4e4e4;
+            height: 5rem;
+            padding-right: 1px;
+          }
+        }
+      }
+
+      .remaining-cards {
+        text-align: center;
+        .remaining-btn {
+          padding: 0.5rem 1rem;
+          border: none;
+          background-color: #f4511e;
+          color: #fff;
+          font-size: 1rem;
+          cursor: pointer;
+        }
+      }
+      @media only screen and (max-width: 768px) {
+        .card {
+          width: 30%;
+        }
+        h3 {
+          font-size: 1rem;
+        }
+        p {
+          font-size: 0.8rem;
+        }
+        span {
+          font-size: 0.8rem;
+        }
+      }
+      @media only screen and (max-width: 576px) {
+        .card {
+          width: 80%;
+        }
+        h3 {
+          font-size: 0.9rem;
+        }
+        p {
+          font-size: 0.7rem;
+        }
+        span {
+          font-size: 0.7rem;
+        }
+      }
+    }
+    .controls {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 2rem 0;
+      .prev-btn,
+      .next-btn {
+        padding: 0.5rem 1rem;
+        border: none;
+        background-color: #f4511e;
+        color: #fff;
+        font-size: 1rem;
+        cursor: pointer;
+        margin: 0 1rem;
+      }
+      .prev-btn:disabled,
+      .next-btn:disabled {
+        background-color: #ddd;
+        color: rgb(120, 118, 118);
+        cursor: not-allowed;
+      }
+    }
+  }
+}

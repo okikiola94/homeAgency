@@ -1,0 +1,29 @@
+.TopNavContainer {
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+
+  .TopNavComponentWrapper {
+    margin-inline: 10% 15%;
+    padding-block: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 25%;
+
+    .TopNavContainerUnList {
+      display: flex;
+      align-items: center;
+      gap: 4rem;
+      list-style: none;
+      font-family: "DM Sans";
+      font-size: 18px;
+      color: #ffffff;
+      cursor: pointer;
+
+      & :hover {
+        color: #f2f2f2;
+      }
+    }
+  }
+}
